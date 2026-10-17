@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Lyn Nyandoro, a frontend-focused software engineer building responsive and accessible digital experiences.">
+  <title>Lyn Nyandoro | Frontend Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Lyn Nyandoro home">LN<span>.</span></a>
+    <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul id="navLinks" class="nav-links">
+      <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">FRONTEND-FOCUSED SOFTWARE ENGINEER</p>
+    <h1>I build useful digital experiences with clean, thoughtful interfaces.</h1>
+    <p class="lead">I'm Lyn Nyandoro, a software engineer focused on responsive web applications, reusable frontend components and user-centred digital experiences.</p>
+    <div class="actions"><a class="button" href="#projects">View Projects</a><a class="button secondary" href="#contact">Contact Me</a></div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <p class="section-label">01 / ABOUT</p>
+  <h2>Building technology that solves real problems.</h2>
+  <p class="wide">My experience spans frontend development, application support and UI/UX. I enjoy turning requirements into clear, responsive interfaces and building tools that improve how users interact with business systems. My work has included banking portals, operational dashboards, monitoring interfaces and alert-management solutions.</p>
+</section>
+
+<section id="skills" class="section">
+  <p class="section-label">02 / SKILLS</p><h2>Tools I work with.</h2>
+  <div class="grid skills">
+    <article class="card"><h3>Frontend</h3><p>ReactJS, JavaScript, HTML5, CSS3 and responsive interface development.</p></article>
+    <article class="card"><h3>UI / UX</h3><p>Figma, prototyping, accessibility, responsive layouts and reusable design patterns.</p></article>
+    <article class="card"><h3>Engineering</h3><p>Git, GitHub, REST APIs, SQL, application support and system integration.</p></article>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <p class="section-label">03 / PROJECTS</p><h2>Selected work.</h2>
+  <div class="projects">
+    <article class="project card"><span>01</span><div><h3>BSS Portal</h3><p>An internal business-support portal bringing together case and knowledge management, operational dashboards and monitoring functionality through reusable frontend components.</p><p class="tags">React · JavaScript · Responsive UI</p></div></article>
+    <article class="project card"><span>02</span><div><h3>Suspense Accounts Monitoring</h3><p>A monitoring interface featuring operational dashboards, alerts, account views, branch email management, monitoring state and export functionality.</p><p class="tags">React · Chakra UI · APIs</p></div></article>
+    <article class="project card"><span>03</span><div><h3>Excess & Arrears Alert System</h3><p>A full-stack alert solution designed to detect banking exceptions, manage notification history and support customer SMS notifications through integrated services.</p><p class="tags">React · Spring Boot · SQL</p></div></article>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <p class="section-label">04 / CONTACT</p><h2>Let's build something useful.</h2>
+  <p>Use the form below to test the portfolio's JavaScript interaction.</p>
+  <form id="contactForm">
+    <label for="name">Name</label><input id="name" name="name" type="text" required>
+    <label for="email">Email</label><input id="email" name="email" type="email" required>
+    <label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
+    <button class="button" type="submit">Send Message</button>
+    <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+  </form>
+</section>
+</main>
+
+<footer><p>Designed & built by Lyn Nyandoro · <span id="year"></span></p></footer>
+<script src="script.js"></script>
+</body>
+</html>
